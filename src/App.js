@@ -11,7 +11,7 @@ import Login from "./views/Login";
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename="/eventos-ui">
         <Header />
         <Switch>
           <Route exact path="/">

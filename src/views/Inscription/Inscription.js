@@ -67,7 +67,7 @@ const Inscription = () => {
           </Form.Text>
         </Form.Group>
         <Form.Group controlId="formGridState">
-          <Form.Label>Evento: </Form.Label>
+          <Form.Label className="text-light bg-dark">Evento: </Form.Label>
           <Form.Control as="select" defaultValue={eventSelected.id} onChange={handleEventChange}>
             <option value="0" label="Evento 1">Evento 1</option>
             <option value="1" label="Evento 2">Evento 2</option>
