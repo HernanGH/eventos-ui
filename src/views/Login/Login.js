@@ -46,7 +46,7 @@ const Login = () => {
   }
 
   return (
-    <>
+    <div className="page">
     <div className="form">
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -68,7 +68,7 @@ const Login = () => {
         onClose={handleClose}
       />)
     }
-    </>
+    </div>
   );
 };
 

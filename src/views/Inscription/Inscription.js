@@ -56,36 +56,36 @@ const Inscription = () => {
   }, [id]);
 
   return (
-    <>
-    <div className="form">
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="text-light bg-dark">Email address: </Form.Label>
-          <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted text-light bg-dark">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-        <Form.Group controlId="formGridState">
-          <Form.Label className="text-light bg-dark">Evento: </Form.Label>
-          <Form.Control as="select" defaultValue={eventSelected.id} onChange={handleEventChange}>
-            <option value="0" label="Evento 1">Evento 1</option>
-            <option value="1" label="Evento 2">Evento 2</option>
-            <option value="2" label="Evento 3">Evento 3</option>
-          </Form.Control>
-        </Form.Group>
-        <Button onClick={handleClick} variant="primary" type="submit">
-          Inscribirme
-        </Button>
-      </Form>
-    </div>
+    <div className="page">
+      <div className="form">
+        <Form>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label className="text-light bg-dark">Email address: </Form.Label>
+            <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email" />
+            <Form.Text className="text-muted text-light bg-dark">
+              We'll never share your email with anyone else.
+            </Form.Text>
+          </Form.Group>
+          <Form.Group controlId="formGridState">
+            <Form.Label className="text-light bg-dark">Evento: </Form.Label>
+            <Form.Control as="select" defaultValue={eventSelected.id} onChange={handleEventChange}>
+              <option value="0" label="Evento 1">Evento 1</option>
+              <option value="1" label="Evento 2">Evento 2</option>
+              <option value="2" label="Evento 3">Evento 3</option>
+            </Form.Control>
+          </Form.Group>
+          <Button onClick={handleClick} variant="primary" type="submit">
+            Inscribirme
+          </Button>
+        </Form>
+      </div>
     {notification && (
       <Notification
         notification={notification}
         onClose={handleClose}
       />)
     }
-    </>
+    </div>
   );
 };
 

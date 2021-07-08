@@ -30,10 +30,22 @@ code {
 
 .list {
   margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .form {
   width: 50%;
   margin: auto;
   margin-top: 64px;
+}
+
+.footer {
+  padding-top: 48px;
+  background-color: black;
+  width: 100vw;
+  height: 256px;
+}
+
+.page {
+  height: 55vh;
 }
