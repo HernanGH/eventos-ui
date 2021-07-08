@@ -1,4 +1,5 @@
 body {
+  background-color: #343a40!important;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,29 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.img-slide {
+  height: 900px;
+  margin: auto;
+}
+
+.product-list {
+  margin: auto;
+  width: 90%;
+  display: flex;
+}
+
+.product-list .card{
+  margin: auto;
+}
+
+.list {
+  margin-top: 48px;
+}
+
+.form {
+  width: 50%;
+  margin: auto;
+  margin-top: 64px;
 }
